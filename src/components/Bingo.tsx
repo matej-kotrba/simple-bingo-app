@@ -21,10 +21,10 @@ export default function Bingo() {
   }
 
   return (
-    <div className={`flex`}>
+    <div className={`flex gap-5`}>
       <div
         className={`grow-0 ${
-          isNewTileOpen ? "basis-[35%]" : "basis-[10%]"
+          isNewTileOpen ? "basis-[35%]" : "basis-[50px]"
         } duration-150`}
       >
         <BingoCreateNew isOpen={isNewTileOpen} setIsOpen={setIsNewTileOpen} />
