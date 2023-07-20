@@ -16,7 +16,10 @@ export default function BingoTable({ data, toggleFunction }: Props) {
     toast(
       toggleState
         ? `BINGO for tile ${data[index].title}`
-        : `Not BINGO after all for tile ${data[index].title}}`
+        : `Not BINGO after all for tile ${data[index].title}`,
+      {
+        progressStyle: { backgroundColor: toggleState ? "green" : "red" },
+      }
     );
   };
 
